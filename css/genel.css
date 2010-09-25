@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face {
+
+	
+	font-family:"Cocaine sans";
+	src:url(font/Cocaine_sans.ttf);
+}
+* {margin:0; padding:0; outline:none;}
+body {text-align:center;}
+hr {border:1px solid #ccc; margin-top:5px;}
+div.genelDiv {margin:60px auto; width:600px; text-align:left; border:2px solid #acdcde; height:400px;}
+div.genelDiv form{width:400px; margin:30px auto;}
+label[for="kMail"],label[for="kSifre"] {display:block;}
+#kMail,#kSifre { width:300px; border:1px solid #e0e0df; -webkit-box-shadow:0 0 5px #e0e0df; -moz-box-shadow:0 0 5px #e0e0df; box-shadow:0 0 5px #e0e0df; line-height:25px; -webkit-border-radius:5px 0 5px 0; }
+h2.baslik {width:500px; margin:20px auto; font:60px "Cocaine sans"; }
+label+input {margin-bottom:10px;}
+#kMail:focus,#kSifre:focus {-webkit-box-shadow:0 0 10px #0cf; -moz-box-shadow:0 0 10px #0cf; box-shadow:0 0 10px #0cf;}
+button {display:block; width:120px; height:30px; background:#ffdf9d; border-width:0 thin thin 0; font:15px "Trebuchet MS"; border-color:#e0e0e0; border-style:solid; margin-left:80px; }
+div.cevap {margin-left:30px; color:#000; font:13px "Trebuchet MS";}
+
+/*Rehber Sayfası*/
+div.rehberDiv { width:800px; margin:50px auto; text-align:left; border:2px solid #acdcde; padding:10px;}
+div.rehberDiv  a{padding:5px 10px; line-height:25px; background:#ffdf9d; color:#000; text-align:center;}
+
+/*Rehber Sayfası kişi Ekle Form*/
+div.formAlani { margin:15px auto; width:400px;     }
+div.formAlani label {display:block; font:16px/20px 'Trebuchet MS'; }
+div.formAlani input[type="text"],div.formAlani textarea{width:300px; border:1px solid #e0e0df; -webkit-box-shadow:0 0 5px #e0e0df; -moz-box-shadow:0 0 5px #e0e0df; box-shadow:0 0 5px #e0e0df; line-height:25px; -webkit-border-radius:5px 0 5px 0;}
+div.formAlani textarea {height:200px;}
+div.formAlani input[type="text"]:focus,div.formAlani textarea:focus {-webkit-box-shadow:0 0 10px #0cf; -moz-box-shadow:0 0 10px #0cf; box-shadow:0 0 10px #0cf;}
+
+/*Kişi Lİste Table*/
+table#kisiListe {font:14px 'Trebuchet MS'; margin-top:20px; }
+table#kisiListe #bos {border:none; background:none;}
+table#kisiListe th,table#kisiListe td{padding:5px 10px;}
+table#kisiListe th {border:1px solid #e0e0e0; border-left:none; background-color:#f3f3f3; color:#474747;}
+table#kisiListe td {border:1px solid #e0e0e0; border-left:none; border-top:none; background-color:#f3f3f3; color:#474747;}
+table#kisiListe tbody th {border-left:1px solid #e0e0e0;}
+table#kisiListe tbody th {border-left:1px solid #e0e0e0;}
+table#kisiListe tbody tr:nth-child(even) td,table#kisiListe tbody tr:nth-child(even) th{background:#fff;}
+
+
