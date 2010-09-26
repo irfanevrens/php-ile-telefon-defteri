@@ -5,8 +5,10 @@ CREATE TABLE IF NOT EXISTS `kisi` (
   `ev` varchar(25) default NULL,
   `adres` text,
   `tarih` varchar(25) NOT NULL,
+  `cep2` varchar(25) NOT NULL,
+  `cep3` varchar(25) NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `ad` (`ad`),
   KEY `cep` (`cep`),
   KEY `ev` (`ev`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8  ;

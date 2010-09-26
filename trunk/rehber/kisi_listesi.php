@@ -30,6 +30,8 @@
 						<th scope="row" id="bos"></th>
 						<th scope="row" abbr="ad-soyad">Ad Soyad</th>
 						<th scope="row" abbr="cep">Cep Telefonu</th>
+						<th scope="row" abbr="cep">Cep Telefonu</th>
+						<th scope="row" abbr="cep">Cep Telefonu</th>
 						<th scope="row" abbr="ev">Ev Telefonu</th>
 						<th scope="row" abbr="adres">Adres</th>
 					</tr>
@@ -45,8 +47,11 @@
 						<th>".$adet."</th>
 						<td>".$row['ad']."</td>
 						<td>".$row['cep']."</td>
+						<td>".$row['cep2']."</td>
+						<td>".$row['cep3']."</td>
 						<td>".$row['ev']."</td>
-						<td>".$row['adres']."</td>
+						<td width='180'>".$row['adres']."</td>
+						<td class='kayitSil'><a href='".$row['ad']."' id='".$row['id']."'><img src='../resim/delete.png'></a></td>
 					</tr>
 						";
 					}
