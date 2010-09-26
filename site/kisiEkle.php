@@ -7,6 +7,8 @@
 	$tAd=$_POST['tAd'];
 	$tEv=$_POST['tEv'];
 	$tCep=$_POST['tCep'];
+	$tCep2=$_POST['tCep2'];
+	$tCep3=$_POST['tCep3'];
 	$tAdres=$_POST['tAdres'];
 	$tTarih=date('d-m-Y');
 	
@@ -20,7 +22,7 @@
 	if(empty ($tAd)) {echo $hata[1];}
 	else if(($tCep=="") && ($tEv=="")) {echo $hata[2]; }
 	else {
-		$kaydet=mysql_query("INSERT INTO kisi(ad,cep,ev,adres,tarih) values('$tAd','$tCep','$tEv','$tAdres','$tTarih')");
+		$kaydet=mysql_query("INSERT INTO kisi(ad,cep,cep2,cep3,ev,adres,tarih) values('$tAd','$tCep','$tCep2','$tCep3','$tEv','$tAdres','$tTarih')");
 		
 		if(!$kaydet) {echo $hata[4];}
 		else {echo $hata[5];}

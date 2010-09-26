@@ -27,6 +27,10 @@
 				<input type="text" id="tAd" />
 				<label  for="tCep">Cep Telefonu</label>
 				<input type="text" id="tCep" />
+				<label  for="tCep2">Cep Telefonu</label>
+				<input type="text" id="tCep2" />
+				<label  for="tCep3">Cep Telefonu</label>
+				<input type="text" id="tCep3" />
 				<label for="tEv">Ev Telefonu</label>
 				<input type="text" id="tEv" />
 				<label for="tAdres">Adres</label>

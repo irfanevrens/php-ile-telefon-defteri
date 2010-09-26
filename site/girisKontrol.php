@@ -4,8 +4,8 @@
 
 	$kMail=$_POST["kMail"];
 	$kSifre=$_POST["kSifre"];
-	$mail="deneme@buraya";
-	$sifre="deneme123";
+	$mail="admin@buraya.com";
+	$sifre="admin55";
 	
 	if( empty($kMail) || empty($kSifre) ) {echo "Boş alanları doldurunuz...";}
 	else if(($kMail!=$mail) || ($kSifre!=$sifre)) {echo "Bilgilerinizi kontrol ediniz...";}
