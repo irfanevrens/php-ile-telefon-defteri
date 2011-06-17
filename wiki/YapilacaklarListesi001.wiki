@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Bu sayfada Telefon Defterinin 0.0.1 veriyonunda neler olacağı hakkında bir liste bulacaksınız.
+
+= Details =
+
+* diğer bilgiler bölümü olacak ve buraya mail adresi bilgisi de eklenecek
+* google maps üzerinden adres tayin özelliği olacak
+* ana sayfa şeklinde bir menü konacak
+* admin yönetimi geliştirilecek, admin için şifremi unuttum vs. sayfaları yapılacak
+* eklenen bilgiler düzenlenebilecek
+* export seçenekleri üzerine araştırma yapılacak ve listeyi en azından txt olarak alma özelliği yapılacak
+* kişinin diğer bilgilerine mesleği kan gurubu gibibilgiler konacak
