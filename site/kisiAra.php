@@ -1,16 +1,21 @@
 <?php
 
-	session_start();
-	include('../baglan.php');
-	if(!session_is_registered("kadi")) {header('location:../index.php');}
-	
-	$arama=$_POST['arama'];
+session_start();
 
-	$yaz=mysql_query("SELECT * FROM kisi WHERE ad LIKE '$arama%' or cep LIKE '$arama%' or cep2 LIKE '$arama%' or cep3 LIKE '$arama%' ORDER BY ad ASC");
-			$adet=0;
-					while($row=mysql_fetch_array($yaz)) {
-							$adet++;
-						echo"
+include('../baglan.php');
+
+if (!$_SESSION['kadi']) {
+
+	header('location:../index.php');
+}
+
+$arama=$_POST['arama'];
+
+$yaz=mysql_query("SELECT * FROM kisi WHERE ad LIKE '$arama%' or cep LIKE '$arama%' or cep2 LIKE '$arama%' or cep3 LIKE '$arama%' ORDER BY ad ASC");
+$adet=0;
+while($row=mysql_fetch_array($yaz)) {
+	$adet++;
+	echo"
 					<tr>
 						<th>".$adet."</th>
 						<td>".$row['ad']."</td>
@@ -22,5 +27,4 @@
 						<td class='kayitSil2'><a href='".$row['ad']."' id='".$row['id']."'><img src='../resim/delete.png'></a></td>
 					</tr>
 						";
-					}
-?>
+}

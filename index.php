@@ -6,7 +6,7 @@
 		<meta name="keywords" content="telefon,defteri,uygulaması" />
 		<meta name="description" content="Telefon numarlarının saklanacağı bir yazılım" />
 		<link rel="stylesheet" type="text/css" href="css/genel.css" charset="UTF-8" media="all" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 		<script type="text/javascript" src="js/genel.js"></script>
 	</head>
 	<body>

@@ -1,7 +1,14 @@
 <?php
-	session_start();
-	include('../baglan.php');
-	if(!session_is_registered("kadi")) {header('location:../index.php');}
+
+session_start();
+
+include('../baglan.php');
+
+if (!$_SESSION['kadi']) {
+	
+	header('location:../index.php');
+}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html>
