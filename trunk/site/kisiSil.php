@@ -12,6 +12,7 @@ if (!$_SESSION['kadi']) {
 $id=$_POST['id'];
 
 $hata=Array();
+
 $hata[1]="no";
 $hata[2]="yes";
 
