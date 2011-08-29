@@ -1,0 +1,5 @@
+Veritabanı Ayarları
+-------------------
+ - Proje/Veritabani/telefon.sql dosyası ile veritabanı tablolarınızı oluşturabilirsiniz.
+ - baglan.php içinden ayarlarınızı değiştirebilirsiniz.
+ - site/girisKontrol.php 7. ve 8. satırdan giriş bilgilerini değiştirebilirsiniz.

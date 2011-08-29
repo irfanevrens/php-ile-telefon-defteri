@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@font-face {
+
+	
+	font-family:"Cocaine sans";
+	src:url(font/Cocaine_sans.ttf);
+}
+* {margin:0; padding:0; outline:none;}
+body {text-align:center;}
+hr {border:1px solid #ccc; margin-top:3px;}
+div.genelDiv {margin:60px auto; width:600px; text-align:left; border:2px solid #acdcde; height:400px;}
+div.genelDiv form{width:400px; margin:30px auto;}
+label[for="kMail"],label[for="kSifre"] {display:block;}
+#kMail,#kSifre { width:300px; border:1px solid #e0e0df; -webkit-box-shadow:0 0 5px #e0e0df; -moz-box-shadow:0 0 5px #e0e0df; box-shadow:0 0 5px #e0e0df; line-height:25px; -webkit-border-radius:5px 0 5px 0; }
+h2.baslik {width:500px; margin:20px auto; font:60px "Cocaine sans"; }
+label+input {margin-bottom:10px;}
+#kMail:focus,#kSifre:focus {-webkit-box-shadow:0 0 10px #0cf; -moz-box-shadow:0 0 10px #0cf; box-shadow:0 0 10px #0cf;}
+button {display:block; width:120px; height:30px; background:#ffdf9d; border-width:0 thin thin 0; font:15px "Trebuchet MS"; border-color:#e0e0e0; border-style:solid; margin-left:80px; }
+div.cevap {margin-left:30px; color:#000; font:13px "Trebuchet MS";}
+
+/*Rehber Sayfası*/
+div.rehberDiv { width:1000px; margin:50px auto; text-align:left; border:2px solid #acdcde; padding:10px;}
+div.rehberDiv  a{padding:5px 10px; line-height:25px; background:#ffdf9d; color:#000; text-align:center; text-decoration:none; -webkit-border-radius: 5px 5px 0 0 ; -moz-border-radius: 5px 5px 0 0 ; border-radius: 5px 5px 0 0 ;}
+div.rehberDiv  a:hover {-webkit-box-shadow:0 -1px 5px #ccc; -moz-box-shadow:0 -1px 5px #ccc; box-shadow:0 -1px 5px #ccc; }
+/*Rehber Sayfası kişi Ekle Form*/
+div.formAlani { margin:15px auto; width:400px;     }
+div.formAlani label {display:block; font:16px/30px 'Trebuchet MS'; background-repeat:no-repeat; background-position:3px center; padding-left:30px; }
+div.formAlani input[type="text"],div.formAlani textarea{width:300px; border:1px solid #e0e0df; -webkit-box-shadow:0 0 5px #e0e0df; -moz-box-shadow:0 0 5px #e0e0df; box-shadow:0 0 5px #e0e0df; line-height:25px; -webkit-border-radius:5px 0 5px 0;}
+div.formAlani textarea {height:200px;}
+div.formAlani input[type="text"]:focus,div.formAlani textarea:focus {-webkit-box-shadow:0 0 10px #0cf; -moz-box-shadow:0 0 10px #0cf; box-shadow:0 0 10px #0cf;}
+
+/*Kişi Lİste Table*/
+table#kisiListe {font:14px 'Trebuchet MS'; margin-top:20px;  }
+table#kisiListe #bos {border:none; background:none;}
+table#kisiListe th,table#kisiListe td{padding:5px 10px;}
+table#kisiListe th {border:1px solid #e0e0e0; border-left:none; background-color:#f3f3f3; color:#474747;}
+table#kisiListe td {border:1px solid #e0e0e0; border-left:none; border-top:none; background-color:#f3f3f3; color:#474747;}
+table#kisiListe tbody th {border-left:1px solid #e0e0e0;}
+table#kisiListe tbody th {border-left:1px solid #e0e0e0;}
+table#kisiListe tbody tr:nth-child(even) td,table#kisiListe tbody tr:nth-child(even) th{background:#fff;}
+table#kisiListe tbody tr:hover  td,table#kisiListe tbody tr:hover th{background:#ffdf9d;}
+table#kisiListe tbody tr td.kayitSil a,table#kisiListe tbody tr td.kayitSil2 a{-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; cursor:pointer; }
+table#kisiListe tbody tr td.kayitSil img,table#kisiListe tbody tr td.kayitSil2 img {border:none;}
+table#kisiListe tbody tr td.kayitSil a,table#kisiListe tbody tr td.kayitSil2 a  {background:none;}
+table#kisiListe tbody tr td.kayitSil,table#kisiListe tbody tr td.kayitSil2   { display:none; padding:2px; width:30px;}
+table#kisiListe tbody tr:hover  td.kayitSil,table#kisiListe tbody tr:hover  td.kayitSil2   { display:table-cell;}
+
+div.formAlani label[for="tAd"] {background-image:url("../resim/ad.png"); }
+div.formAlani label[for="tEv"] {background-image:url("../resim/ev_telefonu.png"); }
+div.formAlani label[for="tAdres"] {background-image:url("../resim/address.png"); }
+div.formAlani label[for="tCep"] ,div.formAlani label[for="tCep2"] ,div.formAlani label[for="tCep3"] {background-image:url("../resim/cep_telefonu.png"); }
+label[for="kisiAra"]  {position:relative; }
+label[for="kisiAra"] span { background:#0cf; position:absolute; left:120px; top:-12px;  text-align:center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; width:350px; display:none; padding-right:5px; cursor:pointer; }
+label[for="kisiAra"] span  div { position:absolute; left:25px; background:url(../resim/tik.png) no-repeat; width:8px; height:8px; }
+label[for="kisiAra"] span:hover {background:#0cf url(../resim/kapat.png) no-repeat 97% center;  }
