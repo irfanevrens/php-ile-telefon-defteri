@@ -1,10 +1,10 @@
 <?php
-$host="localhost";
-$kadi="telefon";
-$sifre="telefon123";
-$vtabani="telefon";
 
+define('VT_HOST', 'localhost');
+define('VT_KULLANICI_ADI', 'telefon');
+define('VT_SIFRE', 'telefon123');
+define('VT_VERITABANI', 'telefon');
 
-$baglan=@mysql_connect($host,$kadi,$sifre);
-mysql_select_db($vtabani,$baglan);
+mysql_connect(VT_HOST, VT_KULLANICI_ADI, VT_SIFRE);
+mysql_select_db(VT_VERITABANI);
 mysql_query("SET NAMES utf8");

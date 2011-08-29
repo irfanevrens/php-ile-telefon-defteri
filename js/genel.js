@@ -12,12 +12,23 @@ $(document).ready(function () {
 	
 	$('label[for="kisiAra"] span').click(function () { $(this).fadeOut(); })
 	
+	// giriş yaparken şifre alanında enter basılınca Giriş Yap butonuna tıklama tetiklenecek
+	$('#kSifre').bind('keypress', function(e) {
+		
+		var code = (e.keyCode ? e.keyCode : e.which);
+		
+		// Enter
+		if (code == 13) {
+		  
+			$('#telGirisi').click();
+		}
+	});
+	
 	/*Rehber girişinde kullanılan fonksiyonlar*/
 	$('#telGirisi').click(function () {
 	
 			var kMail=$('#kMail').val(); //Mail Adresini al
 			var kSifre=$('#kSifre').val(); //Şifreyi al
-			
 			
 			$('.cevap').html("<img src='resim/ajax-loader.gif' /> Lütfen bekleyin..."); // Kullanıcı girişi yaparken loading göster
 		
@@ -27,12 +38,18 @@ $(document).ready(function () {
 				url:'site/girisKontrol.php',
 				data:'kMail='+kMail+'&kSifre='+kSifre,
 				success:function(cevap){
-											if(cevap=="tamam") {window.location.href="rehber/"} //cevap olumlu ise rehber sayfasına gönder
-											else {$('.cevap').html(cevap);}                     //sonuç olumsuz ise hatayı ekrana bastır
-				
-						}
-				})
-	})
+					if (cevap == "tamam") {
+						
+						// cevap olumlu ise rehber sayfasına gönder
+						window.location.href="rehber/kisi_listesi.php"
+					} else {
+					
+						//sonuç olumsuz ise hatayı ekrana bastır
+						$('.cevap').html(cevap);
+					}
+				}
+			});
+	});
 	
 	/*Kişi Ekleme yapılırken Kullanılan Ajax Fonksiyonu*/
 	$('#kisiEkle').click(function () {
